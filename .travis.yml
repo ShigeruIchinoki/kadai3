@@ -2,5 +2,5 @@ language: generic
 script:
   - bash -e ./15745105 20 90 = "10" ; echo $?
   - bash -e ./15745105 0 0 = "0" ; echo $?
-  - bash -e ./15745105 20 90 = "10" ; echo $?
-  - bash -e ./15745105 20 90 = "10" ; echo $?
+  - bash -e ./15745105 "a" "a" = "0" ; echo $?
+  - bash -e ./15745105 -1 -1 = "1" ; echo $?
