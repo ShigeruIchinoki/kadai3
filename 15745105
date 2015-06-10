@@ -16,4 +16,3 @@ A=$(ruby /tmp/hoge.rb $1 $2)
 
 echo $A
 
-exit 0
