@@ -10,7 +10,7 @@ else
 	exit 1
 fi
 
-#test2
+#test2 0は意味ないがチェック
 TEST2=$(./15745105 0 0)
 echo "$TEST2"
 if [ "$TEST2" -eq 0 ]; then
@@ -22,9 +22,19 @@ fi
 
 #test3
 TEST3=$(./15745105 22 33)
-echo "NOT"
 echo "$TEST3"
-if [ ! "$TEST3" -eq 11 ]; then
+if [ "$TEST3" -eq 11 ]; then
+	echo "OK!!!!"
+else
+	echo "NG!!!!"
+	exit 1
+fi
+
+#test4 "not" is test
+TEST3=$(./15745105 22 33)
+echo "Not test"
+echo "$TEST4"
+if [ ! "$TEST4" -eq 11 ]; then
 	echo "OK!!!!"
 else
 	echo "NG!!!!"
