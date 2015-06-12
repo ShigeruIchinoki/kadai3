@@ -31,7 +31,7 @@ else
 fi
 
 #test4 "not test"
-TEST3=$(./15745105 22 33)
+TEST4=$(./15745105 22 33)
 echo "Not test"
 echo "$TEST4"
 if [ ! "$TEST4" -eq 11 ]; then
