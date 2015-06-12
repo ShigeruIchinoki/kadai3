@@ -1,21 +1,13 @@
 #!/bin/bash
-tmp=/tmp/$$
 
-ERROR_EXIT () {
-  echo "$1" >&2
-  rm -f $tmp-*
-  exit 1
-}
+#test1
+TEST1=$(./15745015 20 90)
+echo $TEST1
 
-# TEST1 
+if [ "$TESTans1" -eq 10 ]; then
+	echo "OK!"
+else
+	echo "NG!"
+	exit 1
+fi
 
-echo 10 NG > $tmp-ans
-./15745105 20 90 > $tmp-out || ERROR_EXIT "TEST1-1" 
-diff $tmp-ans $tmp-out || ERROR_EXIT "TEST1-2"
-
-echo OK
-
-
-rm -f $tmp-*
-
-exit 0
