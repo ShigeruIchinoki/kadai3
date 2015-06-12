@@ -21,9 +21,10 @@ else
 fi
 
 #test3
-TEST3=$(./15745105 "a" "a")
+TEST3=$(./15745105 22 33)
+echo "NOT"
 echo "$TEST3"
-if [ "$TEST3" -eq 0 ]; then
+if [ ! "$TEST3" -eq 11 ]; then
 	echo "OK!!!!"
 else
 	echo "NG!!!!"
