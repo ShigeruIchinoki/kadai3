@@ -4,10 +4,10 @@
 TEST1=$(./15745015 20 90)
 echo $TEST1
 
-if [ "$TESTans1" -eq 10 ]; then
-	echo "OK!"
+if [ "$TEST1" -eq 10 ]; then
+	echo "OK!!!!"
 else
-	echo "NG!"
+	echo "NG!!!!"
 	exit 1
 fi
 
