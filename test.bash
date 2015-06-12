@@ -30,7 +30,7 @@ else
 	exit 1
 fi
 
-#test4 "not" is test
+#test4 "not test"
 TEST3=$(./15745105 22 33)
 echo "Not test"
 echo "$TEST4"
