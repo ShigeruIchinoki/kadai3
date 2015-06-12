@@ -20,3 +20,13 @@ else
 	exit 1
 fi
 
+#test3
+TEST3=$(./15745105 "a" "a")
+echo "$TEST3"
+if [ "$TEST3" -eq 0 ]; then
+	echo "OK!!!!"
+else
+	echo "NG!!!!"
+	exit 1
+fi
+
